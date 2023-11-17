@@ -51,25 +51,6 @@ body {
   font-family: "Titillium Web", sans-serif;
 }
 
-.row {
-  padding-right: 0;
-  padding-left: 0;
-  margin-top: 0;
-  margin-right: 0;
-  margin-left: 0;
-}
-
-/* .container,
-.container-fluid,
-.container-lg,
-.container-md,
-.container-sm,
-.container-xl,
-.container-xxl {
-    padding-right: 0;
-    padding-left: 0;
-} */
-
 ul.navbar-nav.me-auto.mb-2.mb-lg-0 {
   margin: 0 auto;
 }
@@ -85,7 +66,7 @@ ul.navbar-nav.me-auto.mb-2.mb-lg-0 {
 }
 
 .navbar-light .navbar-brand {
-  color: rgba(0, 0, 0, 0.9);
+  color: #000000e6;
   padding: 0 0px;
 }
 
@@ -120,14 +101,6 @@ a.nav-link.dropdown-toggle {
   color: #ffff !important;
 }
 
-/*
-form.d-flex {
-    margin-top: -17px;
-}*/
-
-/* li.nav-item {
-    padding-top: 18px;
-} */
 
 .home {
   margin-top: -8px;
@@ -184,19 +157,22 @@ a.nav-link.dropdown-toggle {
   font-weight: 200;
 }
 
-.background-image {
-  background-position: center center;
+/*Banner Section*/
+.banner-section .background-image {
+  position: relative;
   background-size: cover;
+  background-repeat: no-repeat;
   width: 100%;
+  min-height: 500px;
   height: auto;
   min-height: 600px;
-  background-repeat: no-repeat;
+  object-fit: cover;
 }
 
-.banner-content {
-  top: 300px;
+.banner-section .banner-content {
+  top: 50%;
   position: absolute;
-  left: 115px;
+  right: 55%;
 }
 
 h6.banner-slagon {
@@ -213,18 +189,6 @@ h5.banner-heading {
   color: #1f717f;
   text-shadow: 0px 0px 8px #ffffff;
 }
-
-/*-------------------------------------------------------Second Section Start---------------------------------------------------*/
-/* img.img-1 {
-    width: 85%;
-    position: absolute;
-    clip-path: circle(20%);
-    bottom: 17%;
-    left: 33%;
-    background-image: cover;
-    z-index: 5px;
-    position: absolute;
-} */
 
 .image-1 {
   width: 100%;
@@ -301,20 +265,20 @@ p.create {
 .circle {
   width: 430px;
   height: 430px;
-  background: rgb(255, 255, 255);
+  background: #ffffff;
   margin: 10% auto;
   border-radius: 50%;
   position: relative;
   top: 145px;
   left: -336px;
   z-index: 999;
-  box-shadow: 1px 1px 7px 4px rgb(0 0 0 / 32%);
+  box-shadow: 1px 1px 7px 4px #00000052;
   transition: 0.5s;
 }
 .circle:hover {
   transform: scale(1.01);
-  -webkit-box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.81);
-  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.81);
+  -webkit-box-shadow: 0px 0px 15px 5px #000000cf;
+  box-shadow: 0px 0px 15px 5px #000000cf;
 }
 
 img.circle-image {
@@ -598,10 +562,6 @@ button.footer-button {
   padding-left: 30px;
 }
 
-/* .col-sm-12.col-md-6.col-lg-6.col-xl-6.footer-top-right {
-    padding-left: 25px;
-} */
-
 .footer-right-side1 span {
   padding-left: 25px;
 }
@@ -637,13 +597,6 @@ p.banner-product-content.text-center {
 
 .Featured-section {
   margin-top: 50px;
-}
-
-.product-page .background-image {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center top;
-  min-height: 379px;
 }
 
 .product-page p.banner-product-content.text-center {
@@ -780,19 +733,9 @@ p.txt-start {
     width: 191%;
   }
 
-  .banner-section .background-image {
-    background-size: contain;
-    min-height: 350px;
-  }
-
   h6.banner-slagon {
     font-size: 19px;
     padding-left: 6px;
-  }
-
-  .banner-content {
-    top: 131px;
-    left: 10%;
   }
 
   h5.banner-heading {
@@ -860,14 +803,6 @@ p.txt-start {
     padding-left: 0px;
   }
 
-  /* img.success {
-        padding-bottom: 91px;
-        max-width: 100%;
-        margin: auto;
-        width: 100%;
-        margin-top: 40px;
-    } */
-
   .people-img {
     width: 100%;
   }
@@ -892,20 +827,7 @@ p.txt-start {
 
 @media (max-width: 768px) {
   .banner-section .background-image {
-    background-image: url(./inc/Images/sonrich-banner.jpg);
     min-height: 335px;
-    height: auto;
-    position: relative;
-    width: 100%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    /* position: relative; */
-  }
-
-  .banner-content {
-    top: 151px;
-    position: absolute;
-    left: 43px;
   }
 
   li.nav-item.dropdown {
@@ -1140,6 +1062,14 @@ p.txt-start {
   i.fa.fa-brands.fa-facebook-f {
     font-size: 32px;
   }
+
+  .row.t-1.mt-4 {
+    padding: 20px;
+  }
+
+  li.nav-item.dropdown {
+    padding-left: 0;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1149,11 +1079,6 @@ p.txt-start {
 
   button.navbar-toggler {
     margin-left: -50px;
-  }
-
-  .banner-content {
-    top: 72px;
-    left: 10px;
   }
 
   h6.banner-slagon {
@@ -1208,11 +1133,6 @@ p.txt-start {
   i.fa.fa-solid.fa-circle {
     font-size: 13px;
   }
-
-  /* img.success {
-        margin-left: 40px;
-        width: 80%;
-    } */
 
   .right-side-content {
     padding-left: 20px;
@@ -1305,161 +1225,7 @@ p.txt-start {
   li.nav-item.dropdown {
     /* margin-left: 84px; */
   }
-}
-/* @media (min-width: 820px) and (max-width: 1200px) {
-    .banner-section .background-image {
-        width: 100%;
-        height: auto;
-        background-size: cover;
-    }
 
-    .banner-content {
-        top: 145px;
-        left: 35px;
-        padding-left: 15px;
-    }
-
-    h5.banner-heading {
-        font-size: 50px;
-    }
-
-    h6.banner-slagon {
-        font-size: 16px;
-    }
-
-    .peo-description {
-        padding-left: 70px;
-        width: 83%;
-    }
-
-    .banner-section .background-image {
-        min-height: 413px;
-    } */
-
-/* p.improve {
-        font-size: 17px;
-    }
-
-    p.create {
-        font-size: 26px;
-        width: 120%;
-    }
-
-    p.circle-content-para {
-        font-size: 16px;
-    }
-
-    .nature-links {
-        font-size: 20px;
-        padding-left: 83px;
-        margin-top: 37px;
-    }
-
-    .circle {
-        width: 350px;
-        height: 350px;
-        top: 106px;
-        left: -254px;
-    }
-
-    .circle-content {
-        width: 100%;
-        top: 26%;
-        left: 1px;
-    }
-
-    img.circle-image {
-        left: 71px;
-    }
-
-    img.circle-image {
-        width: 50%;
-    }
-
-    p.circle-content-para {
-        padding-bottom: 10px;
-    }
-
-    a.circle-link {
-        font-size: 18px;
-    }
-
-    img.img-1 {
-        height: 350px;
-        width: 350px;
-        top: 65px;
-        left: 550px;
-    }
-
-    img.fea-img {
-        width: 100%;
-    }
-
-    h2.featured-title.text-center {
-        font-size: 40px;
-        padding-top: 0px;
-    } */
-
-/* .stay-description {
-        padding-left: 50px;
-    }
-
-    .list-item {
-        width: 100%;
-    }
-    img.success {
-        padding-bottom: 91px;
-        padding-top: 25px;
-        width: 100%;
-        margin-left: -41px;
-    }
-
-    .fourth-section .people-img img {
-        width: 100%;
-    }
-
-    h2.right-content-sub-title {
-        font-size: 40px;
-        height: 75px;
-    } */
-/* 
-    .cards-3 {
-        padding: 55px;
-        width: 100%;
-        margin-left: 0px;
-        padding-bottom: 57px;
-    }
-
-    .cards-2 {
-        background: #63aeb7;
-        padding: 56px;
-        width: 100%;
-        margin-left: 0px;
-    }
-
-    .cards-1 {
-        background: #83ced7;
-        padding: 53px;
-        width: 100%;
-        padding-bottom: 59px;
-    }
-
-    p.circle-content-para {
-        padding-top: 23px;
-    }
-} */
-
-@media (max-width: 768px) {
-  .row.t-1.mt-4 {
-    padding: 20px;
-  }
-
-  li.nav-item.dropdown {
-    padding-left: 0;
-  }
-}
-
-@media (max-width: 576px) {
   .row.f-product {
     padding: 20px;
   }
