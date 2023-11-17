@@ -101,7 +101,6 @@ a.nav-link.dropdown-toggle {
   color: #ffff !important;
 }
 
-
 .home {
   margin-top: -8px;
 }
@@ -171,8 +170,8 @@ a.nav-link.dropdown-toggle {
 
 .banner-section .banner-content {
   top: 50%;
-  position: absolute;
-  right: 55%;
+  left: 50%;
+  transform: translate(-120%,-50%);
 }
 
 h6.banner-slagon {
