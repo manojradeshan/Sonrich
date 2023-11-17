@@ -180,7 +180,8 @@ a.nav-link.dropdown-toggle {
 
 .banner-section .banner-content {
   top: 50%;
-  left: 5%;
+  left: 50%;
+  transform: translate(-120%,-50%);
 }
 
 h6.banner-slagon {
