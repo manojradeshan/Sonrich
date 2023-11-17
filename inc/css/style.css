@@ -47,6 +47,10 @@ ul {
   margin-bottom: 0;
 }
 
+body {
+  font-family: "Titillium Web", sans-serif;
+}
+
 .row {
   padding-right: 0;
   padding-left: 0;
@@ -196,7 +200,7 @@ a.nav-link.dropdown-toggle {
 }
 
 h6.banner-slagon {
-  font-size: 27px;
+  font-size: 25px;
   font-weight: 300;
   color: #fff;
   letter-spacing: 2px;
@@ -562,7 +566,6 @@ img.footer-logo {
   width: 60%;
 }
 
-
 button.footer-button {
   padding: 6px;
   font-size: 14px;
@@ -700,8 +703,6 @@ p.txt-start {
   padding: 0;
 }
 
-
-
 /* Contact page styles */
 .map-Sec iframe {
   width: 100%;
@@ -749,7 +750,6 @@ p.txt-start {
   position: absolute;
   bottom: 0;
 }
-
 
 /*------------------------------------------Responsive CSS--------------------------------------------------------------------*/
 
@@ -1448,10 +1448,6 @@ p.txt-start {
         padding-top: 23px;
     }
 } */
-
-
-
-
 
 @media (max-width: 768px) {
   .row.t-1.mt-4 {
