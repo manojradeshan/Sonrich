@@ -1,6 +1,6 @@
 :root {
   --green: #209d54;
-  --dark-blue: #1f717f;
+  --dark-blue: #006f7d;
   --white: #ffff;
   --black: #0000;
   --yellow: #eabe12;
@@ -77,7 +77,8 @@ ul.navbar-nav.me-auto.mb-2.mb-lg-0 {
 
 .navbar-light .navbar-brand {
   color: var(--black);
-  padding: 0 0px;
+  padding: 0;
+  margin: 0;
 }
 
 .navbar-brand img {
@@ -176,15 +177,16 @@ a.nav-link.dropdown-toggle {
   height: auto;
   min-height: 600px;
   object-fit: cover;
+  background-position: center center;
 }
 
 .banner-section .banner-content {
   top: 50%;
   left: 50%;
-  transform: translate(-120%,-50%);
+  transform: translate(-120%, -50%);
 }
 
-h6.banner-slagon {
+h1.banner-slagon {
   font-size: 25px;
   font-weight: 300;
   color: var(--white);
@@ -193,7 +195,7 @@ h6.banner-slagon {
   padding-left: 6px;
 }
 
-h5.banner-heading {
+h2.banner-heading {
   font-size: 72px;
   color: var(--dark-blue);
   text-shadow: 0px 0px 8px var(--white);
@@ -202,16 +204,14 @@ h5.banner-heading {
 
 .image-1 {
   width: 100%;
-  position: inherit;
+  position: relative;
 }
 
 img.img-1 {
   height: 430px;
   width: 430px;
   border-radius: 50%;
-  position: absolute;
-  top: 64px;
-  left: 663px;
+  position: relative;
 }
 
 p.improve {
@@ -236,7 +236,6 @@ p.create {
 .nature-links {
   font-size: 28px;
   padding-left: 33px;
-  margin-top: 42px;
 }
 
 .nature-links a {
@@ -276,11 +275,11 @@ p.create {
   width: 430px;
   height: 430px;
   background: var(--white);
-  margin: 10% auto;
+  margin: auto;
   border-radius: 50%;
-  position: relative;
-  top: 145px;
-  left: -336px;
+  position: absolute;
+   top: 35%;
+  right: 20%;
   z-index: 999;
   box-shadow: 1px 1px 7px 4px #00000052;
   transition: 0.5s;
@@ -338,7 +337,6 @@ h4.product_name {
 h2.featured-title.text-center {
   font-size: 47px;
   color: var(--dark-blue);
-  padding-bottom: 40px;
   font-weight: 700;
 }
 
