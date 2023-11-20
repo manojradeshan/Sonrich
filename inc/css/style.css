@@ -75,6 +75,14 @@ ul.navbar-nav.me-auto.mb-2.mb-lg-0 {
   padding-bottom: 0rem;
 }
 
+.nav-link {
+  transition: 0.5s;
+}
+.active,
+.nav-link:hover {
+  /* border-bottom: 1px solid var(--dark-blue); */
+}
+
 .navbar-light .navbar-brand {
   color: var(--black);
   padding: 0;
@@ -278,7 +286,7 @@ p.create {
   margin: auto;
   border-radius: 50%;
   position: absolute;
-   top: 35%;
+  top: 35%;
   right: 20%;
   z-index: 999;
   box-shadow: 1px 1px 7px 4px #00000052;
