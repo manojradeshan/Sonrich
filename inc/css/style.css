@@ -386,7 +386,6 @@ i.fa.fa-solid.fa-circle {
 
 /*-----------------------------------------------------Third Section Start--------------------------------------------------*/
 .stay {
-  margin-top: 100px;
   background-color: var(--dark-blue);
 }
 
@@ -690,7 +689,6 @@ p.txt-start {
 
 .header_sec {
   background: #429a87;
-  padding: 4%;
   border-top-left-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
 }
